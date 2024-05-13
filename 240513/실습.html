@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실습</title>
+  <style>
+      *{
+          margin:0;
+          padding: 0;
+      }
+      body{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+      }
+      header{
+          color: white;
+          background-color: black;
+          padding: 20px;
+      }
+      footer{
+          color: white;
+          background-color: teal;
+          padding: 20px;
+      }
+      .cont{
+          display: flex;
+          flex-grow: 1;
+      }
+      .cont main{
+          flex-grow: 1;
+          background-color: white;
+      }
+      .cont aside{
+          flex-basis: 100px;
+          background-color: #BABCBE;
+      }
+  </style>
+</head>
+<body>
+<header>Header</header>
+<div class="cont">
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+</div>
+<footer>footer</footer>
+</body>
+</html>

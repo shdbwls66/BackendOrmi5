@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>align-self</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        ul{
+            display: flex;
+            height: 500px;
+            background-color: royalblue;
+            list-style: none;
+            align-items: center;
+        }
+        li{
+            flex-basis: 100px;
+            flex-grow: 1;
+            height: 50px;
+            background-color: teal;
+            border: 1px solid black;
+        }
+        .child{
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li class="child">3</li>
+    <li>4</li>
+    <li>5</li>
+    <!--  <li>1</li>-->
+    <!--  <li>2</li>-->
+    <!--  <li>3</li>-->
+    <!--  <li>4</li>-->
+    <!--  <li>5</li>-->
+    <!--  <li>1</li>-->
+    <!--  <li>2</li>-->
+    <!--  <li>3</li>-->
+    <!--  <li>4</li>-->
+    <!--  <li>5</li>-->
+</ul>
+</body>
+</html>
