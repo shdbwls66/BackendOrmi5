@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break와continue</title>
+</head>
+<body>
+<script>
+    //break
+    let i = 1;
+    while (i<=3) {
+        let id = Number(prompt("생년월일 8자리 입력하세요"));
+        let pw = prompt("비밀번호를 입력하세요");
+        if((id == 20000515) && (pw == "jsissohard")){
+            alert("로그인 성공")
+            break;
+        } else{
+            alert("틀렸습니다."+(i + '/ 3'));
+        }
+        i+=1;
+    }
+    if(i>=4){
+        alert("기회 끝");
+    }
+
+    let i = 1;
+    while (i<=3) {
+        let quiz = prompt("부엉이가 수영하면?");
+        if(quiz === "첨부엉첨부엉"){
+            alert("정답입니당")
+            break;
+        } else{
+            alert("틀렸습니다. 기회는 " + `${3-i}` + " 번!");
+        }
+        i+=1;
+    }
+    if(i>=4){
+        alert("기회 끝! 정답은 '첨부엉첨부엉' 이었습니다");
+    }
+    //continue
+    let arr = ['a', 'b', 'c', 'd', 'e', '가', '나', '다', '라', '마', ];
+    for (let i = 0; i < 10; i++) {
+        if (i < 5) continue;
+        console.log(arr[i] + ' 는 한글입니다.');
+    }
+</script>
+</body>
+</html>
