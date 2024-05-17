@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this</title>
+</head>
+<body>
+<script>
+    //window 객체 가리킴
+    function test(){
+        console.log(this);
+    }
+
+    test(); //window.test();
+
+    //myObj 객체 가리킴
+    let myObj = {
+        val1: 100,
+        func1: function () {
+            console.log(this);
+        }
+    }
+
+    myObj.func1();
+
+    //window 객체 가리킴
+    let myObj = {
+        val1: 100,
+        func1: function () {
+            console.log(this);
+        }
+    }
+
+    let test = myObj.func1;
+    test()
+
+    //실행 내용데 따라 참조값이 달라지는 this
+    function sayName(){
+        console.log(this.name);
+    }
+
+    var name = 'Hero';
+
+    let peter = {
+        name : 'Peter Parker',
+        sayName : sayName
+    }
+
+    let bruce = {
+        name : 'Bruce Wayne',
+        sayName : sayName
+    }
+
+    sayName();
+    peter.sayName();
+    bruce.sayName();
+
+    //this의 활용
+    let 호텔 = [{
+        '이름' : '하나호텔',
+        '위치' : '제주도 제주시 001',
+        '가격' : {'A':50000, 'B':30000, 'C':15000},
+        '방의개수' : 50,
+        '예약자수' : 25,
+        '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    },{
+        '이름' : '둘호텔',
+        '위치' : '제주도 제주시 002',
+        '가격' : {'A':100000, 'B':60000, 'C':30000},
+        '방의개수' : 100,
+        '예약자수' : 30,
+        '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    },{
+        '이름' : '셋호텔',
+        '위치' : '제주도 제주시 003',
+        '가격' : {'A':80000, 'B':50000, 'C':30000},
+        '방의개수' : 120,
+        '예약자수' : 80,
+        '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    }];
+    console.log(호텔[0].남은방의개수());
+    console.log(호텔[1].남은방의개수());
+    console.log(호텔[2].남은방의개수());
+
+    //this
+    function MyConstructor(){
+        this.val1 = 'hello this'; //this가 가리키는 건 객체 myInstance
+    }
+    let myInstance = new MyConstructor()
+</script>
+</body>
+</html>

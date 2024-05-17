@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class</title>
+</head>
+<body>
+<script>
+    class Me {
+        constructor() {
+            this.name = '노유진';
+            this.age = 25;
+        }
+        drink(power){
+            power.powerUp();
+        }
+    }
+
+    class Caffeine {
+        constructor() {
+            this.power = 1;
+        }
+        powerUp() {
+            this.power++;
+        }
+    }
+
+    const me = new Me();
+    const caffeine = new Caffeine();
+</script>
+</body>
+</html>
