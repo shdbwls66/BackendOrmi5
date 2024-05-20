@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard";
+}
+.cont{
+    width: 1920px;
+    margin: auto;
+}
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*헤더 만들기*/
+header.header{
+    padding: 0 320px;
+    height: 900px;
+    font-size: 16px;
+    background-color: #F2E9D8;
+}
+/*헤더 상단*/
+.header_bar{
+    display: flex;
+    padding: 31px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.hodu_logo{
+    width: 130px;
+    height: 40px;
+}
+.top_nav{
+    display: flex;
+    padding: 0 49px 0 756px;
+    align-items: center;
+    gap: 30px;
+}
+.nav_DownBtn, .header_DownBtn{
+    font-size: 16px;
+    padding: 15px 31px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    background-color: #D97652;
+}
+/*헤더 제목 부분*/
+.text_header{
+    display: flex;
+    justify-content: space-between;
+}
+.test2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 170px 0 0;
+    gap: 40px;
+}
+.header_title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 200px;
+}
+.header_p{
+    width: 420px;
+    color: black;
+}
+.cat_box{
+    width: 415px;
+    height: 766px;
+    padding-top: 32px;
+}
+/* 메인 */
+.main{
+    padding: 0 320px;
+    text-align: left;
+}
+
+.cat_maintop{
+    width: 660px;
+    height: 390px;
+    margin: 80px 110px 0 0;
+    float: left;
+}
+.main_title{
+    padding: 172px 40px 30px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+/*고양이 컨텐츠*/
+.cat_cont{
+    text-align: center;
+}
+.CatCont_title{
+    padding-top: 120px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #D97652;
+    clear: both;
+}
+.CatCont_p{
+    padding: 40px 285px 88px 285px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.cat_list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+.cat_list img{
+    width: 378px;
+    height: 378px;
+}
+.cat_maintop, .cat_list img{
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0 #00000040;
+}
+.show_more{
+    padding:100px 0 28px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.ShowMore_btn, .subscribe_btn{
+    font-size: 16px;
+    padding: 15px 29px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    background-color: #D97652;
+}
+/*선*/
+hr{
+    height: 1px;
+    margin: 80px 0 68px 0;
+    border: none;
+    background-color: #C4C4C4;
+}
+
+/*위치*/
+.location, .subscribe_box{
+    margin: 0 320px;
+}
+.location_title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    color: black;
+}
+.location_p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 20px 0 48px 0;
+    color: #606367;
+}
+.map{
+    width: 1278px;
+    height: 520px;
+}
+
+aside{
+    position: relative;
+}
+/*구독박스*/
+.subscribe_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 58px 51px 58px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: #263140;
+}
+.subscribe_text{
+    width: 471px;
+}
+.subscribe_title{
+    padding-bottom: 18px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.subscribe_p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+/*이메일박스*/
+.email_box{
+    display: flex;
+    align-items: center;
+    padding: 5px 6px 5px 28px;
+    border-radius: 60px;
+    background-color: white;
+    color: #767676;
+}
+.email_logo{
+    width: 24px;
+    height: 24px;
+}
+#email{
+    padding: 0 137px 0 16px;
+    border: none;
+    outline: none;
+}
+#subscribe_btn{
+    padding: 15px 29px;
+}
+
+.CatBack_cont{
+    width: 1920px;
+    height: 340px;
+    margin-top: -100px;
+    overflow: hidden;
+    position: relative;
+}
+.cat_background{
+    width: 100%;
+    margin-top: -400px;
+    background-color: #F2E9D8;
+}
+#scroll_btn{
+    position: fixed;
+    margin-left: 1846px;
+    bottom: 179px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+#scroll_btn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 320px;
+}
+.sns_link{
+    display: flex;
+    gap: 20px;
+}
+.sns_link img{
+    width: 42px;
+    height: 42px;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("Pretendard-Regular.otf") format("opentype");
+}
