@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 삽입</title>
+</head>
+<body>
+<button>버튼을 눌러보세요</button>
+<p></p>
+<script>
+    const myBtn = document.querySelector("button");
+    const myP = document.querySelector("p");
+    myBtn.addEventListener('click', function(){
+        myP.innerText = "뿅!";
+    })
+</script>
+</body>
+</html>

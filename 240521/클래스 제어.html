@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>클래스 제어</title>
+</head>
+<body>
+<button>버튼을 눌러보세요</button>
+<p></p>
+<script>
+    const myBtn = document.querySelector("button");
+    myBtn.addEventListener('click', function() {
+        myBtn.classList.add("blue");
+    });
+    /*
+    myBtn.classList.remove("blue")
+    myBtn.classList.toggle("blue")
+    myBtn.classList.contains("blue")
+    */
+</script>
+</body>
+</html>
