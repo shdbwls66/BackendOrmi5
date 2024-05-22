@@ -9,36 +9,36 @@
 </head>
 <body class="cont">
 <header class="header">
-    <div class="header_bar">
+    <div class="HeaderBar">
         <a class="hodu_link" href="http://localhost:63342/HTMLCSS/HODU%20project/HODU.html?_ijt=vn658ui67oqdb6k8g63sdlhtqs"><img class="hodu_logo" src="hodu_logo.png" alt="메인페이지이동"></a>
-        <nav class="top_nav">
+        <nav class="menu">
             <a class="Home" href="">Home</a>
             <a class="About" href="">About</a>
             <a class="Support" href="">Support</a>
         </nav>
-        <button class="nav_DownBtn">Download</button>
+        <button id="nav_DownBtn">Download</button>
     </div>
 
-    <div class="text_header">
-        <div class="test2">
-            <h1 class="header_title">
+    <div class="HeaderContent">
+        <div class="HeaderText">
+            <h1 class="HeaderTitle">
                 Lorem Ipsum is simply<br>
                 dummy text of the printing and
             </h1>
-            <p class="header_p">
+            <p class="HeaderP">
                 Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.<br>
                 Lorem Ipsum has been the industry's standard dummy text
                 ever since the 1500s, when an unknown
             </p>
-            <button class="header_DownBtn">Download</button>
+            <button id="header_DownBtn">Download</button>
         </div>
         <img class="cat_box" src="cat_box.png" alt="">
     </div>
 </header>
 
 <main class="main">
-    <img class="cat_maintop" src="cat_maintop.png" alt="">
+    <img class="cat_MainTop" src="cat_maintop.png" alt="">
     <h2 class="main_title">
         Lorem Ipsum is simply
         dummy text of the printing
@@ -80,7 +80,6 @@
             <p class="modalP">Lorem Ipsum is simply dummy text of the printing industry.</p>
             <button id="modalBtn">OK! I Love HODU</button>
         </div>
-
     </div>
     <div class="subscribe_box">
         <div class="subscribe_text">
@@ -99,7 +98,10 @@
     <div class="CatBack_cont">
         <img class="cat_background" src="cat_background.png" alt="">
     </div>
-    <button id="scrollBtn"><img src="scroll-top-btn.png" alt="스크롤 맨 위로"></button>
+    <button id="scrollBtn">
+        <img src="scroll-top-btn.png" alt="스크롤 맨 위로">
+        <img src="scroll-top-btn2.png" alt="스크롤 맨 위로">
+    </button>
 </aside>
 <footer class="footer">
     <a href="http://localhost:63342/HTMLCSS/HODU%20project/HODU.html?_ijt=vn658ui67oqdb6k8g63sdlhtqs"><img class="hodu_logo2" src="hodu_logo.png" alt="메인페이지이동"></a>
@@ -131,6 +133,10 @@
             top: 0, left: 0, behavior: "smooth"
         })
     })
+    //scrollTop.addEventListener('mousedown', () => {
+
+    //})
+
 </script>
 </body>
 </html>
