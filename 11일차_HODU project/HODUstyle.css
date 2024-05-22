@@ -5,7 +5,6 @@
 }
 .cont{
     width: 1920px;
-    margin: auto;
 }
 a:-webkit-any-link {
     color: black;
@@ -129,7 +128,7 @@ header.header{
     font-weight: 700;
     line-height: 30px;
 }
-.ShowMore_btn, .subscribe_btn{
+.ShowMore_btn, #subscribeBtn, #modalBtn{
     font-size: 16px;
     padding: 15px 29px;
     border: none;
@@ -189,15 +188,18 @@ aside{
 }
 .subscribe_title{
     padding-bottom: 18px;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 45px;
 }
 .subscribe_p{
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
 }
+.subscribe_title, .modalTitle{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
 /*이메일박스*/
 .email_box{
     display: flex;
@@ -216,10 +218,11 @@ aside{
     border: none;
     outline: none;
 }
-#subscribe_btn{
+#subscribeBtn{
     padding: 15px 29px;
 }
 
+/**/
 .CatBack_cont{
     width: 1920px;
     height: 340px;
@@ -232,16 +235,17 @@ aside{
     margin-top: -400px;
     background-color: #F2E9D8;
 }
-#scroll_btn{
+#scrollBtn{
     position: fixed;
     margin-left: 1846px;
     bottom: 179px;
     width: 50px;
     height: 50px;
     border: none;
+    cursor: pointer;
     background-color: transparent;
 }
-#scroll_btn img{
+#scrollBtn img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -259,6 +263,41 @@ aside{
 .sns_link img{
     width: 42px;
     height: 42px;
+}
+#myModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 30px 0 #00000033;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    background: url("modal_background.png");
+    background-size: cover;
+}
+.catFace{
+    width: 110px;
+    height: 112px;
+    padding: 60px 0 24px 0;
+}
+.modalTitle{
+    color: #D97652;
+}
+.modalP{
+    padding: 12px 0 38px 0;
+    font-size: 16px;
+    line-height: 20px;
 }
 @font-face {
     font-family: "Pretendard";
