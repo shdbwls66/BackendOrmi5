@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preventDefault 실습</title>
+</head>
+<body>
+<script>
+    document.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+        alert("마우스 오른쪽 버튼은 사용할 수 없습니다.")
+    })
+</script>
+</body>
+</html>

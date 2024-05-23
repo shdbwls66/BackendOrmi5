@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data 속성</title>
+</head>
+<body>
+<div
+        class="terran battle-cruiser"
+        data-ship-id="324"
+        data-weapons="laser"
+        data-health="400"
+        data-mana="250"
+        data-skill="yamato-cannon"
+>
+    hello div
+    <span>hello spam</span>
+    <strong>important text!!</strong>
+</div>
+<script>
+    const div = document.querySelector('div')
+    console.log(div.dataset);
+    console.log(div.dataset.shipId);
+</script>
+</body>
+</html>

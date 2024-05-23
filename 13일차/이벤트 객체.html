@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 객체</title>
+</head>
+<body>
+<article class="parent">
+    <ol>
+        <li><button class="btn-first" type="button">버튼1</button></li>
+        <li><button type="button">버튼2</button></li>
+        <li><button type="button">버튼3</button></li>
+    </ol>
+</article>
+
+<script>
+    const parent = document.querySelector('.parent');
+    parent.addEventListener('click', function (event) {
+        console.log(event);
+        console.log(event.target);
+    })
+</script>
+</body>
+</html>
