@@ -9,61 +9,61 @@
 </head>
 <body class="cont">
 <header class="header">
-    <div class="HeaderBar">
+    <div class="headerBar">
         <a class="hodu_link" href="http://localhost:63342/HTMLCSS/HODU%20project/HODU.html?_ijt=vn658ui67oqdb6k8g63sdlhtqs"><img class="hodu_logo" src="hodu_logo.png" alt="메인페이지이동"></a>
         <nav class="menu">
             <a class="Home" href="">Home</a>
             <a class="About" href="">About</a>
             <a class="Support" href="">Support</a>
         </nav>
-        <button id="nav_DownBtn">Download</button>
+        <button id="barDownBtn" class="btn">Download</button>
     </div>
 
-    <div class="HeaderContent">
-        <div class="HeaderText">
-            <h1 class="HeaderTitle">
+    <div class="headerCont">
+        <div class="headerText">
+            <h1 class="headerTitle">
                 Lorem Ipsum is simply<br>
                 dummy text of the printing and
             </h1>
-            <p class="HeaderP">
+            <p class="headerP">
                 Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.<br>
                 Lorem Ipsum has been the industry's standard dummy text
                 ever since the 1500s, when an unknown
             </p>
-            <button id="header_DownBtn">Download</button>
+            <button id="contDownBtn" class="btn">Download</button>
         </div>
-        <img class="cat_box" src="cat_box.png" alt="">
+        <img class="catBox" src="cat_box.png" alt="">
     </div>
 </header>
 
 <main class="main">
-    <img class="cat_MainTop" src="cat_maintop.png" alt="">
-    <h2 class="main_title">
+    <img class="cat_mainTop" src="cat_maintop.png" alt="">
+    <h2 class="mainTitle">
         Lorem Ipsum is simply
         dummy text of the printing
         and dummy text
     </h2>
-    <p class="main_p">
+    <p class="mainP">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
     </p>
-    <article class="cat_cont">
-        <h3 class="CatCont_title">dummy text of the printing and dummy</h3>
-        <p class="CatCont_p">
+    <article class="catCont">
+        <h3 class="catCont_title">dummy text of the printing and dummy</h3>
+        <p class="catCont_p">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
         </p>
-        <ul class="cat_list">
-            <li><img class="cat1_img" src="cat1_img.png" alt="본문고양이1"></li>
-            <li><img class="cat2_img" src="cat2_img.png" alt="본문고양이2"></li>
-            <li><img class="cat3_img" src="cat3_img.png" alt="본문고양이3"></li>
-            <li><img class="cat4_img" src="cat4_img.png" alt="본문고양이4"></li>
-            <li><img class="cat5_img" src="cat5_img.png" alt="본문고양이5"></li>
-            <li><img class="cat6_img" src="cat6_img.png" alt="본문고양이6"></li>
+        <ul class="catImage">
+            <li><img src="cat1_img.png" alt="catImage"></li>
+            <li><img src="cat2_img.png" alt="catImage"></li>
+            <li><img src="cat3_img.png" alt="catImage"></li>
+            <li><img src="cat4_img.png" alt="catImage"></li>
+            <li><img src="cat5_img.png" alt="catImage"></li>
+            <li><img src="cat6_img.png" alt="catImage"></li>
         </ul>
         <p class="show_more">Continue exploring HODU</p>
-        <button id="ShowMore_Btn">Show more</button>
+        <button id="showMoreBtn" class="btn">Show more</button>
     </article>
     <hr/>
 </main>
@@ -78,7 +78,7 @@
             <img class="catFace" src="catFace.png" alt="">
             <h3 class="modalTitle">Thank you!</h3>
             <p class="modalP">Lorem Ipsum is simply dummy text of the printing industry.</p>
-            <button id="modalBtn">OK! I Love HODU</button>
+            <button id="modalBtn" class="btn">OK! I Love HODU</button>
         </div>
     </div>
     <div class="subscribe_box">
@@ -92,7 +92,7 @@
         <div class="email_box">
             <label for="email"><img class="email_logo" src="mail.png" alt=""></label>
             <input id="email" type="email" placeholder="Enter your e-mail address">
-            <button id="subscribeBtn">Subscribe</button>
+            <button id="subscribeBtn" class="btn">Subscribe</button>
         </div>
     </div>
     <div class="CatBack_cont">
@@ -113,16 +113,16 @@
     </nav>
 </footer>
 
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	ab20547f349506662536582357e6b8fe"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab20547f349506662536582357e6b8fe"></script>
 <script>
     // Show More 버튼
-    const catList = document.querySelector('.cat_list');
-    const showMoreBtn = document.getElementById('ShowMore_Btn');
+    const catImage = document.querySelector('.catImage');
+    const showMoreBtn = document.getElementById('showMoreBtn');
     let skip = 0;
 
-    showMoreBtn.addEventListener('click', ()=>{fetchimages(skip+=3)});
+    showMoreBtn.addEventListener('click', ()=>{fetchImages(skip+=3)});
 
-    async function fetchimages(skip){
+    async function fetchImages(skip){
         try{
             const response = await fetch(`https://cataas.com/api/cats?limit=3&skip=${skip}`);
             if(!response.ok){
@@ -137,11 +137,9 @@
         }
     }
 
-    fetchimages();
-
     function makeImageList(cats){
         cats.forEach((cats)=>{
-            catList.insertAdjacentHTML("beforeend", `<li><img src="https://cataas.com/cat/${cats._id}" alt="""></li>`)
+            catImage.insertAdjacentHTML("beforeend", `<li><img src="https://cataas.com/cat/${cats._id}" alt="catImage"></li>`)
         })
     }
 
@@ -168,14 +166,13 @@
     })
 
     //지도
-    const mapContainer = document.getElementById('map'),
+    const mapContainer = document.getElementById('map'), // 지도를 표시할 div
         mapOption = {
-            center: new kakao.maps.LatLng(33.4425, 126.5715),
+            center: new kakao.maps.LatLng(33.4425, 126.5715), // 지도의 중심좌표
             level: 2 // 지도의 확대 레벨
         };
 
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    const map = new kakao.maps.Map(mapContainer, mapOption);
+    const map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
     // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
     const mapTypeControl = new kakao.maps.MapTypeControl();

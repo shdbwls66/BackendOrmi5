@@ -3,6 +3,10 @@
     padding: 0;
     font-family: "Pretendard";
 }
+@font-face {
+    font-family: "Pretendard";
+    src: url("Pretendard-Regular.otf") format("opentype");
+}
 .cont{
     width: 1920px;
 }
@@ -19,7 +23,7 @@ header.header{
     background-color: #F2E9D8;
 }
 /*헤더 상단*/
-.HeaderBar{
+.headerBar{
     display: flex;
     padding: 26px 0;
     justify-content: space-between;
@@ -27,7 +31,6 @@ header.header{
 }
 .hodu_logo{
     width: 130px;
-    height: 40px;
 }
 .menu{
     display: flex;
@@ -35,9 +38,11 @@ header.header{
     align-items: center;
     gap: 30px;
 }
-#nav_DownBtn, #header_DownBtn{
+#barDownBtn, #contDownBtn{
     font-size: 16px;
     padding: 15px 31px;
+}
+.btn{
     border: none;
     border-radius: 40px;
     font-weight: 700;
@@ -46,28 +51,28 @@ header.header{
     background-color: #D97652;
 }
 /*헤더 제목 부분*/
-.HeaderContent{
+.headerCont{
     display: flex;
     justify-content: space-between;
     gap: 170px;
 }
-.HeaderText{
+.headerText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
 }
-.HeaderTitle{
+.headerTitle{
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
     padding-top: 200px;
 }
-.HeaderP{
+.headerP{
     width: 420px;
     color: black;
 }
-.cat_box{
+.catBox{
     width: 415px;
     padding-top: 32px;
 }
@@ -77,23 +82,25 @@ header.header{
     text-align: left;
 }
 
-.cat_MainTop{
+.cat_mainTop{
     width: 660px;
     height: 390px;
     margin: 80px 110px 0 0;
     float: left;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0 #00000040;
 }
-.main_title{
+.mainTitle{
     padding: 172px 40px 30px 0;
     font-size: 36px;
     font-weight: 700;
     line-height: 45px;
 }
 /*고양이 컨텐츠*/
-.cat_cont{
+.catCont{
     text-align: center;
 }
-.CatCont_title{
+.catCont_title{
     padding-top: 120px;
     font-size: 48px;
     font-weight: 700;
@@ -101,41 +108,34 @@ header.header{
     color: #D97652;
     clear: both;
 }
-.CatCont_p{
+.catCont_p{
     padding: 40px 285px 88px 285px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
 }
-.cat_list{
+.catImage{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     gap: 72px;
 }
-.cat_list img{
+.catImage img{
     width: 378px;
     height: 378px;
-}
-.cat_MainTop, .cat_list img{
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0 #00000040;
 }
+
 .show_more{
     padding:100px 0 28px 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
 }
-#ShowMore_Btn, #subscribeBtn, #modalBtn{
+#showMoreBtn, #subscribeBtn, #modalBtn{
     font-size: 16px;
     padding: 15px 29px;
-    border: none;
-    border-radius: 40px;
-    font-weight: 700;
-    cursor: pointer;
-    color: white;
-    background-color: #D97652;
 }
 /*선*/
 hr{
@@ -309,8 +309,4 @@ aside{
     padding: 12px 0 38px 0;
     font-size: 16px;
     line-height: 20px;
-}
-@font-face {
-    font-family: "Pretendard";
-    src: url("Pretendard-Regular.otf") format("opentype");
 }
