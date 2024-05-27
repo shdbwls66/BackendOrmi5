@@ -4,8 +4,11 @@
     font-family: "Pretendard";
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("Pretendard-Regular.otf") format("opentype");
+    font-family: 'Pretendard';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('PretendardVariable.woff2') format('woff2-variations');
 }
 .cont{
     width: 1920px;
@@ -50,11 +53,10 @@ header.header{
     color: white;
     background-color: #D97652;
 }
-/*헤더 제목 부분*/
+/*헤더 내용 부분*/
 .headerCont{
     display: flex;
     justify-content: space-between;
-    gap: 170px;
 }
 .headerText{
     display: flex;
@@ -64,12 +66,12 @@ header.header{
 }
 .headerTitle{
     font-size: 48px;
-    font-weight: 700;
     line-height: 60px;
     padding-top: 200px;
 }
 .headerP{
     width: 420px;
+    line-height: 22px;
     color: black;
 }
 .catBox{
@@ -93,7 +95,6 @@ header.header{
 .mainTitle{
     padding: 172px 40px 30px 0;
     font-size: 36px;
-    font-weight: 700;
     line-height: 45px;
 }
 /*고양이 컨텐츠*/
@@ -101,21 +102,23 @@ header.header{
     text-align: center;
 }
 .catCont_title{
-    padding-top: 120px;
+    padding: 120px 0 40px 0;
     font-size: 48px;
-    font-weight: 700;
     line-height: 60px;
     color: #D97652;
     clear: both;
 }
 .catCont_p{
-    padding: 40px 285px 88px 285px;
+    padding: 0 285px;
     font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
+}
+.catCont_p strong{
+    color: #D97652;
 }
 .catImage{
     display: flex;
+    padding-top: 88px;
     list-style: none;
     flex-wrap: wrap;
     gap: 72px;
@@ -127,12 +130,14 @@ header.header{
     box-shadow: 10px 10px 30px 0 #00000040;
 }
 
+/*더보기 버튼*/
 .show_more{
     padding:100px 0 28px 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
 }
+
 #showMoreBtn, #subscribeBtn, #modalBtn{
     font-size: 16px;
     padding: 15px 29px;
@@ -151,7 +156,6 @@ hr{
 }
 .location_title{
     font-size: 36px;
-    font-weight: 700;
     line-height: 45px;
     color: black;
 }
@@ -191,12 +195,10 @@ aside{
 }
 .subscribe_p{
     font-size: 14px;
-    font-weight: 400;
     line-height: 18px;
 }
 .subscribe_title, .modalTitle{
     font-size: 36px;
-    font-weight: 700;
     line-height: 45px;
 }
 
@@ -218,23 +220,21 @@ aside{
     border: none;
     outline: none;
 }
-#subscribeBtn{
-    padding: 15px 29px;
-}
 
-/**/
-.CatBack_cont{
+/*하단 고양이 배경*/
+.catBackground{
     width: 1920px;
     height: 340px;
     margin-top: -100px;
     overflow: hidden;
-    position: relative;
 }
-.cat_background{
+.catBackground img{
     width: 100%;
     margin-top: -400px;
     background-color: #F2E9D8;
 }
+
+/*스크롤 버튼*/
 #scrollBtn{
     position: fixed;
     margin-left: 1846px;
@@ -244,12 +244,10 @@ aside{
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    /*background-color: transparent;*/
 }
 #scrollBtn img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 #scrollBtn img:last-child{
     display: none;
@@ -275,6 +273,8 @@ aside{
     width: 42px;
     height: 42px;
 }
+
+/*모달*/
 #myModal{
     display: none;
     position: fixed;
@@ -287,6 +287,8 @@ aside{
     justify-content: center;
     align-items: center;
 }
+
+/*모달 내용*/
 .modalContent{
     display: flex;
     flex-direction: column;
