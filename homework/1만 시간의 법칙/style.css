@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "tvN Enjoystories";
+    src: url("tvN Enjoystories Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gmarket Sans";
+    src: url("GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+/*컨텐츠 배경 양식*/
+body.content{
+    width: 1920px;
+    background-color: #5B2386;
+    margin: 0;
+}
+.content_main{
+    text-align: center;
+    font-family: "Gmarket Sans";
+    margin: 0;
+}
+/*메인 제목 숨기기*/
+.title_hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+/*뒷로고 양식*/
+.back_img{
+    width: 261px;
+    height: 265px;
+    padding: 199px 830px 46px;
+}
+/*제목로고 양식*/
+.title_img{
+    width: 564px;
+    height: 112px;
+    position: absolute;
+    top: 273px;
+    left: 678px;
+}
+/*txt_연습*/
+.txt_연습{
+    margin: 0;
+    padding-bottom: 78px;
+    font-family: "tvN Enjoystories";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    color: #F5DF4D;
+}
+/*txt_법칙정의*/
+ul.content_법칙정의{
+    display: flex;
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+}
+.left_따옴표,.right_따옴표{
+    padding: 20px 0 0 0;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    color: #FCEE214D;
+}
+.txt_법칙정의{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 14px 102px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.bold{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.txt_career,.txt_hours{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.txt_career{
+    padding: 0 0 59px 0;
+    list-style: none;
+}
+.txt_hours{
+    padding-bottom: 115px;
+}
+.ex_career,.ex_hours{
+    margin: 0 17px;
+    border-radius: 7px;
+    color: #BABCBE;
+    background-color: #FFFFFF;
+}
+.ex_career{
+    padding: 16px 40px;
+}
+.ex_hours{
+    padding: 16px 67px;
+}
+
+p.txt_Question{
+    width: 565px;
+    margin: 0;
+    background-color: #FCEE21;
+}
+.hand{
+    width:64px;
+    height:72px;
+    vertical-align: text-top;
+}
+
+.txt_Question,.txt_Answer{
+    font-size: 24px;
+    line-height: 24px;
+    margin:0;
+}
+.txt_Answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 147px 0 127px 0;
+    list-style: none;
+    color: #FFFFFF;
+}
+.programing,.hours_bold{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.txt_Question,button{
+    display: inline-block;
+    font-size: 24px;
+    padding: 21px;
+    border-radius: 56px;
+    font-family: "Gmarket Sans";
+    font-weight: 700;
+    color: #5B2386;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.훈련GO{
+    width: 356px;
+    background-color:#FCEE21;
+}
+.share{
+    width: 191px;
+    background-color:#ffffff;
+}
+
+.weniv{
+    display: block;
+    margin: auto;
+    width: 125px;
+    height: 25px;
+    padding: 130px 0 20px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+.noto-sans-kr-text_bottom {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.text_bottom{
+    padding-bottom: 70px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+}
